@@ -17,16 +17,17 @@ const calculateShapeArea = (obj:Area):number => {
 	if(obj.shape == 'rectangle'){
 		return obj.width * obj.height
 	}
-	if(obj.shape == 'circle'){
+	else if(obj.shape == 'circle'){
 		return Math.PI * obj.radius ** 2
+	} else{
+		return 0
 	}
 }
-const rectangleArea = calculateShapeArea({
-	shape: "rectangle",
-	width: 4,
-	height: 6,
-  });
-console.log(rectangleArea)
+// const rectangleArea = calculateShapeArea({
+// 	shape: "rectangle",
+// 	width: 4,
+// 	height: 6,
+//   });
 
-const circleArea = calculateShapeArea({ shape: "circle", radius: 5 })
-console.log(circleArea)
+
+// const circleArea = calculateShapeArea({ shape: "circle", radius: 5 })
