@@ -7,5 +7,6 @@ interface Profile {
 function updateProfile(profileObj:Profile, updatedPart: Partial<Profile>):Profile{
 	return {...profileObj, ...updatedPart}
 }
-// const myProfile = { name: "Alice", age: 25, email: "alice@example.com" };
+const myProfile = { name: "Alice", age: 25, email: "alice@example.com" };
 // console.log(updateProfile(myProfile, {name:"robi"}));
+
