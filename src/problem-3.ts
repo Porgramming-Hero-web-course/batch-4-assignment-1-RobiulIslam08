@@ -5,4 +5,4 @@ const countWordOccurrences =(strSen:string, word:string):number =>{
 	
 	return result.length
 }
-console.log(countWordOccurrences("I love typescript", "Typescript"))
+// console.log(countWordOccurrences("I love typescript", "Typescript"))
